@@ -217,7 +217,7 @@ main {
     color: var(--text-one);
 }
 
-.container h1 {
+.container h2 {
     margin: 10px 0 3px;
     color: var(--text-two);
     font-size: 3.5rem;
@@ -249,7 +249,9 @@ main {
     color: var(--bright-red);
 }
 
-.body>h1 {
+.body>p {
+    font-weight: 700;
+    font-size: 1.5rem;
     color: var(--text-two);
     margin: 25px 0;
 }
@@ -291,13 +293,13 @@ main {
     font-size: 15px;
 }
 
-.down h1 {
+.down p:first-child {
     color: var(--text-two);
     font-weight: 700;
     font-size: 28px;
 }
 
-.down p {
+.down p:last-child {
     color: var(--lime-green);
     display: flex;
     align-items: center;
@@ -309,9 +311,9 @@ main {
     margin-right: 3px;
 }
 
-.container-overview:nth-child(2) .down p,
-.container-overview:nth-child(7) .down p,
-.container-overview:nth-child(8) .down p {
+.container-overview:nth-child(2) .down p:last-child,
+.container-overview:nth-child(7) .down p:last-child,
+.container-overview:nth-child(8) .down p:last-child {
     color: var(--bright-red);
 }
 
