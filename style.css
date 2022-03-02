@@ -113,7 +113,7 @@ hr {
 .toggle {
     background-color: var(--toggle);
     border-radius: 15px;
-    width: 45px;
+    width: 46px;
     height: 24px;
     border: none;
     position: relative;
@@ -140,7 +140,7 @@ hr {
     background-color: var(--bg);
     position: absolute;
     top: 0;
-    right: 1px;
+    right: 0;
 }
 
 .active {
