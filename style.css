@@ -40,7 +40,7 @@
 
     --facebook: hsl(208, 92%, 53%);
     --twitter: hsl(203, 89%, 53%);
-    --insta: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --insta: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --youtube: hsl(348, 97%, 39%);
 }
 
@@ -169,10 +169,36 @@ main {
     padding: 2rem 0;
     text-align: center;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 .container:hover {
     background-color: var(--card-bg-hover);
+}
+
+.container span {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 3px;
+}
+
+.container:first-child span {
+    background-color: var(--facebook);
+}
+
+.container:nth-child(2) span {
+    background-color: var(--twitter);
+}
+
+.container:nth-child(3) span {
+    background-image: var(--insta);
+}
+
+.container:last-child span {
+    background-color: var(--youtube);
 }
 
 .head {
